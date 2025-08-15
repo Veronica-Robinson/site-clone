@@ -1,0 +1,8 @@
+body {
+    background-color: azure;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 3em;
+}
