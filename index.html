@@ -13,6 +13,16 @@
     <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js"
         defer></script>
 
+    <!-- NOTE Logo Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Splash&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 
     <title>Site Clone</title>
@@ -20,27 +30,41 @@
 
 <body class="debug">
 
-
-    <!-- NOTE Header Whole Section-->
-    <header class="container-fluid">
-
+    <nav class="container-fluid sticky-top">
         <!-- STUB Header Navigation Top Section -->
         <nav class="row sticky-top">
             <div class="col">
-                <h1>LOGO</h1>
+
+                <h1 class="text-white mdi mdi-bat logo p-2 m-2">Elder Emo</h1>
             </div>
         </nav>
+    </nav>
+
+    <!-- NOTE Header Whole Section-->
+    <header class="container-fluid hbs-img d-flex justify-content-between">
+
         <!-- STUB Header Bottom Section -->
-        <div class="row">
-            <div class="col">
-                <p>FORM</p>
-                FILL OUT INPUT
+        <div class="row p-8 m-2  justify-content-between ">
+            <div class="col-12 col-md-3 text-white  --bs-tertiary-bg-rgb border border-primary-subtle g-5">
+                <article class="e-emo text-white">FORM</article>
+                <div>Name</div>
+                <div>Email</div>
+                <div>Phone</div>
+                <div>Message:</div>
+                <div>checkbox</div>
             </div>
-            <div class="col">
-                <h2>TEXT OVER AN IMAGE</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas reiciendis voluptate laborum tempore
-                    saepe. Distinctio, quidem saepe excepturi, optio ab maiores modi, fugiat dolore sequi eius veritatis
-                    iste totam alias?</p>
+            FILL OUT INPUT
+            <div class="tab-selected p-5 m-2 d-flex justify-content-end">
+
+                <div class="col-md-5 tab">
+                    <h2 class="f-splash">Not a phase</h2>
+                    <p class="f-forum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas reiciendis
+                        voluptate laborum
+                        tempore
+                        saepe. Distinctio, quidem saepe excepturi, optio ab maiores modi, fugiat dolore sequi eius
+                        veritatis
+                        iste totam alias?</p>
+                </div>
             </div>
         </div>
     </header>
@@ -50,45 +74,71 @@
 
 
         <!-- STUB Main Top Section -->
-        <div class="row"> A
-            <div class="col">
-                ONE COL
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        ONE COL SPILL BOX
+        <div class="row d-flex flex-wrap bg-dark-pink p-3 p-5 mb-5">
+
+            <div class="col-12 col-md-7 order-md-2 vern-card-details">
+                <div class="row spill-card-offset d-sm-block vern-card-body py-4 mb-1">
+                    <div class="col spill-card">
+
+                        <div class="card vern-card-body bg-spill-box">
+                            <article class="card-body">
+                                <div class="mdi mdi-cat"> Me-oww oww pss psp reeeeeee-ooowww meow mow.</div>
+                                <div class="mdi mdi-spider-thread"> The itsy-bitsy spider went up the water
+                                    spout.</div>
+                                <div class="mdi mdi-cards-heart"> We all love a good metal conert.</div>
+                                <div class="mdi mdi-ghost"> Emo, Goth, Alt, whatever you are. We are all friend here in
+                                    the spooky community.</div>
+                                <div class="mdi mdi-magic-staff"> A little spell work never hurt anyone...</div>
+                            </article>
+                        </div>
                     </div>
+
                 </div>
 
             </div>
+            <div class="col-12 col-md-5 order-md-1 ">
+                <h3>A LOT OF WORDS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sit pariatur libero?</p>
+            </div>
         </div>
         <!-- STUB Main Middle Section -->
-        <div class="row">
-            <div class="col">
-                IMAGE
-                <img src="" alt="">
+        <div class="row d-flex justify-content-evenly p-1 m-5">
+            <div class="col-12 col-md-2">
+                <img class="w-100 w-md-50 img-fit"
+                    src="https://images.unsplash.com/photo-1622748961248-5a0a6c02465c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="woman standing in street">
             </div>
-            <div class="col">
-                TEXT
+            <div class="col-12 col-md-5 p-5 d-flex justify-content-evenly align-content-center">
+                <span> Be your AUTHENTIC self </span>
+                <span> A Little black never hurt anyone</span>
+                <p>Distinctio, et sit incidunt maiores
+                    excepturi perferendis accusantium earum asperiores quam voluptate? Recusandae laudantium distinctio
+                    repellendus a, rerum ad placeat sed autem.</p>
             </div>
         </div>
         <!-- STUB Main Bottom Section -->
         <div class="row">
-            <div class="col">
-                <!-- STUB MBS CARD 1 -->
-                <article class="card bg-primary">
-
+            <div class="col-12 col-md-3 order-md-2 ">
+                <!-- STUB MBS ICON CARD -->
+                <article class="card bg-primary vern-three-star">
                     <div class="card-body">
-                        1
+                        <stars class="">
+                            <span class="mdi mdi-star-circle"></span>
+                            <span class="mdi mdi-star-circle"></span>
+                            <span class="mdi mdi-star-circle"></span>
+
+                        </stars>
+                        <p class="mdi mdi-format-quote-open">I will always be an emo girlie. No, mom it is NOT a phase!
+                            I get to wear black all the time!</p>
+
                     </div>
 
             </div>
             </article>
-            <div class="col">
+            <div class="col-12 col-md-3 order-md-1">
 
-                <!-- STUB MBS Card 2 -->
-                <article class="card bg-secondary">
+                <!-- STUB MBS CARD 2 -->
+                <article class="card bg-secondary vern-review">
 
                     <div class="card-body">
                         2
@@ -96,10 +146,10 @@
 
                 </article>
             </div>
-            <div class="col">
+            <div class="col-12 col-md-3 order-md-3">
 
                 <!-- STUB MBS Card 3 -->
-                <article class="card bg-danger">
+                <article class="card bg-danger vern-review">
                     <div class="card-body">
                         3
                     </div>

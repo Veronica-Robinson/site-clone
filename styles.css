@@ -1,8 +1,111 @@
 body {
-    background-color: azure;
+    background-color: #ffffff;
+}
+
+:root {
+    --dark-pink: #2d1825;
+    --light-pink: #503245;
+    --soft-pink: #f6daebb4;
 }
 
 .sticky-top {
+    background-color: #503245;
     position: sticky;
-    top: 3em;
+    top: 0;
+    z-index: 1000;
+
 }
+
+.bg-dark-pink {
+    background-color: var(--dark-pink);
+    padding: 60%
+}
+
+.bg-spill-box {
+    background-color: var();
+    box-shadow: 3px;
+}
+
+.logo {
+    font-family: "Astloch", system-ui;
+    font-weight: 100;
+}
+
+.e-emo {
+    font-family: "Astloch", system-ui;
+    padding: 1%;
+}
+
+.f-forum {
+    font-family: "Forum", serif;
+    color: whitesmoke;
+}
+
+.f-splash {
+    font-family: "Splash", cursive;
+    color: whitesmoke;
+    font-size: 60px;
+}
+
+.info-card {}
+
+@media (min-width: 600px) {
+
+    .spill-card {
+        display: flex;
+        position: relative;
+        left: 100px;
+        top: 5em;
+        padding: 5px 20px 5px
+    }
+
+
+
+    .spill-card-offset {
+
+        position: absolute;
+        margin-top: -10%;
+        margin-right: 15%;
+    }
+
+}
+
+
+.vern-card-body {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2px;
+}
+
+.review-card {}
+
+.hbs-img {
+    background-image: url(https://images.unsplash.com/photo-1519412203450-e04051dbb778?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+
+}
+
+/* Makes Column Text OVER IMAGE DISAPPEAR */
+.tab {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .tab {
+        display: none;
+    }
+
+    .tab-selected {
+        display: inline-block;
+    }
+
+}
+
+.vern-review {}
+
+.vern-three-star {}
