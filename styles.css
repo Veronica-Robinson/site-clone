@@ -5,7 +5,7 @@ body {
 :root {
     --dark-pink: #2d1825;
     --light-pink: #503245;
-    --soft-pink: #f6daebb4;
+    --soft-pink: #f6deedb4;
 }
 
 .sticky-top {
@@ -32,8 +32,9 @@ body {
 }
 
 .e-emo {
-    font-family: "Astloch", system-ui;
+    font-family: "Forum", system-ui;
     padding: 1%;
+    font-size: 30px;
 }
 
 .f-forum {
@@ -47,12 +48,11 @@ body {
     font-size: 60px;
 }
 
-.info-card {}
 
 @media (min-width: 600px) {
 
     .spill-card {
-        display: flex;
+
         position: relative;
         left: 100px;
         top: 5em;
@@ -64,19 +64,15 @@ body {
     .spill-card-offset {
 
         position: absolute;
-        margin-top: -10%;
+        margin-top: -5%;
         margin-right: 15%;
     }
 
 }
 
 
-.vern-card-body {
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 2px;
-}
 
+/* Header Background Image */
 
 .hbs-img {
     background-image: url(https://images.unsplash.com/photo-1519412203450-e04051dbb778?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -91,6 +87,7 @@ body {
 
 .img-lady {
     background-image: url(https://images.unsplash.com/photo-1622748961248-5a0a6c02465c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    width: 100%
 }
 
 /* Makes Column Text OVER IMAGE DISAPPEAR */
@@ -109,13 +106,38 @@ body {
 
 }
 
+.vern-review-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--soft-pink);
+    padding: 2%;
+}
+
+
 .vern-review {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .vern-three-star {
     display: flex;
     justify-content: center;
-    box-shadow: 3px;
+    box-shadow: 1px;
+}
+
+/* Map Image */
+
+.map-image {
+    background-image: url(https://s1.cdn.autoevolution.com/images/news/the-latest-google-maps-update-comes-with-an-unpleasant-surprise-for-some-users-147113-7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+
 }
